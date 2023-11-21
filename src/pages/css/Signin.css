@@ -1,0 +1,54 @@
+#components-form-demo-normal-login .login-form {
+  max-width: 300px;
+}
+#components-form-demo-normal-login .login-form-forgot {
+  float: right;
+}
+#components-form-demo-normal-login .ant-col-rtl .login-form-forgot {
+  float: left;
+}
+#components-form-demo-normal-login .login-form-button {
+  width: 100%;
+  
+}
+
+
+.content {
+  display: flex;
+flex-direction: column;
+align-items: center;
+}
+
+h3 {
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+p{
+  margin-top: 0px;
+  margin-bottom: 0px;
+}
+
+.ant-btn-primary {
+  background-color:#805EDF;
+}
+
+.container{
+  display: flex;
+padding: 32px;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+gap: 32px;
+border-radius: 16px;
+background: #FFF;
+box-shadow: 0px 4px 55px 0px rgba(0, 0, 0, 0.07);
+}
+.ant-form-item-row{
+  display: flex;
+flex-direction: column;
+align-items: flex-start;
+gap: 8px;
+width: 500px;
+
+}

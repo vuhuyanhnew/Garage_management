@@ -1,0 +1,29 @@
+.detail-container {
+    padding: 20px;
+  }
+  
+  .detail-label {
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .detail-value {
+    margin-bottom: 10px;
+    color: #555;
+  }
+  
+  .ant-row {
+    margin-bottom: 16px;
+  }
+  
+  .ant-card {
+    box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2);
+  }
+  
+  a {
+    color: #1890ff;
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+  
