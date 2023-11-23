@@ -11,7 +11,7 @@ import { DeleteOutlined, ProfileOutlined } from '@ant-design/icons';
 const OwnerList = () => {
   const [params, setParams] = useState({
     page: 1,
-    limit: 10,
+    limit: 1,
   });
 
   const dispatch = useDispatch();

@@ -111,7 +111,54 @@ const Service = () => {
     setValue(value);
   };
 
-  if (!management) return;
+  const onSearch = () => {
+    if (type === 'Name') {
+      setQuery({ ...query, name: value });
+    } else {
+      setQuery({ ...query, email: value });
+    }
+  };
+
+  const toCreateService = () => {
+    navigate('/createservice');
+  };
+
+  useEffect(() => {
+    // call API
+    fetchService();
+  }, [query]);
+
+  //-------------------------
+  // let idNew = null;
+  // const data = owners;
+  // if (data && data.length > 0) {
+  //   idNew = data[0].id;
+  // }
+  // //xoa
+  // const token = localStorage.getItem('accessToken') ?? '';
+
+  // const apiURL = `services/${idNew}`;
+
+  // const deleteService = () => {
+  //   axiosInstance
+  //     .delete(apiURL, {
+  //       headers: {
+  //         'Content-Type': 'application/json',
+  //         Authorization: `Bearer ${token}`,
+  //       },
+  //     })
+  //     .then((result) => {
+  //       console.log(result);
+  //     })
+  //     .catch((error) => {
+  //       console.error(error);
+  //       notification.open({
+  //         message: error.response.data.message,
+  //       });
+  //     });
+
+  //   onTableChange();
+  // };
 
   return (
     <div

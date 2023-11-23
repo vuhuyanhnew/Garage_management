@@ -156,22 +156,6 @@ const CreateOwner = ({ value }) => {
               </Form.Item>
             </Col>
           </Row>
-          <Row gutter={[16, 24]}>
-            <Col className="gutter-row" span={8}>
-              <Card>
-                <Input placeholder="Enter garage name" onChange={handleInputChange} value={filterValue} />
-                <Form.Item name="garageIds" label="Garage">
-                  <Checkbox.Group>
-                    {filteredGarages.map((garage) => (
-                      <div key={garage}>
-                        <Checkbox value={garage}>{garage}</Checkbox>
-                      </div>
-                    ))}
-                  </Checkbox.Group>
-                </Form.Item>
-              </Card>
-            </Col>
-          </Row>
         </Form>
         <SubmitButton form={form} />
         <Link to={'/owner'}>
@@ -182,3 +166,22 @@ const CreateOwner = ({ value }) => {
   );
 };
 export default CreateOwner;
+
+{
+  /* <Row gutter={[16, 24]}>
+<Col className="gutter-row" span={8}>
+  <Card>
+    <Input placeholder="Enter garage name" onChange={handleInputChange} value={filterValue} />
+    <Form.Item name="garageIds" label="Garage">
+      <Checkbox.Group>
+        {filteredGarages.map((garage) => (
+          <div key={garage}>
+            <Checkbox value={garage}>{garage}</Checkbox>
+          </div>
+        ))}
+      </Checkbox.Group>
+    </Form.Item>
+  </Card>
+</Col>
+</Row> */
+}
